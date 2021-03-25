@@ -1,0 +1,20 @@
+.nav {
+    max-width: 1850px;
+}
+
+
+.nav-tabs {
+    display: flex;
+    float: right;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
