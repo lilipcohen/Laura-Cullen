@@ -10,20 +10,49 @@
   justify-content: center;
 }
 .modal-content {
-  width: 500px;
+  width: 400px;
+  height: 500px;
   background-color: white;
 }
-.modal-header,
-.modal-footer {
+.modal-header {
   padding: 10px;
+  text-align: center;
+  font-size: 40px;
 }
 
 .modal-title {
   margin: 0;
 }
 
-.modal-body {
-  padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 200px;
+  text-align: center;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.submit {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  width: 50%;
 }
