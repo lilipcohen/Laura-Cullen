@@ -12,12 +12,29 @@ const LoginModal = (props) => {
         <div className="modal-header">
           <h4>Login</h4>
         </div>
-        <div className="modal-body">Body Text</div>
-        <div className="modal-footer">
-          <button onClick={props.onClose}>close</button>
-        </div>
+        <form onSubmit={props.handleSubmit}>
+          <label>
+            email:
+            <input
+              type="text"
+              value={props.value}
+              onChange={props.handleChange}
+            />
+          </label>
+          <label>
+            password:
+            <input
+              type="text"
+              value={props.value}
+              onChange={props.handleChange}
+            />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+        <button onClick={props.onClose}>close</button>
       </div>
     </div>
+    // </div>
   );
 };
 
