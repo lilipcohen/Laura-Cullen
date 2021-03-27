@@ -7,6 +7,17 @@ import LoginModal from './components/LoginModal';
 function App() {
   const [show, setShow] = useState(false);
 
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setShow({
+      ...show,
+      [name]: value,
+    });
+  };
+  const onSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div>
       <Router>
