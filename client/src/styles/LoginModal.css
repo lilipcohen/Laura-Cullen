@@ -1,4 +1,4 @@
-.modal {
+#modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -9,19 +9,19 @@
   align-items: center;
   justify-content: center;
 }
-.modal-content {
+#modal-content {
   width: 400px;
   height: 500px;
+  padding: 10px 10px 0px 10px;
   background-color: white;
 }
-.modal-header {
-  padding: 10px;
+#modal-header {
+  padding: 20px;
   text-align: center;
-  font-size: 40px;
 }
 
-.modal-title {
-  margin: 0;
+h4 {
+  font-size: 40px;
 }
 
 form {
@@ -31,6 +31,7 @@ form {
   justify-content: center;
   flex-direction: column;
   padding: 0 50px;
+  margin-top: 90px;
   height: 200px;
   text-align: center;
 }
@@ -43,10 +44,10 @@ input {
   width: 100%;
 }
 
-.submit {
+#submit {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background-color: #ff4b2b;
+  border: 1px solid #008cba;
+  background-color: #008cba;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
