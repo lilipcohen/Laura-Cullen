@@ -6,7 +6,7 @@ const FooterLogin = (props) => {
       <h3>Manager</h3>
       <ul>
         <li>
-          <button>Manager Login</button>
+          <a onClick={props.onClick}>Manager Login</a>
         </li>
       </ul>
     </div>

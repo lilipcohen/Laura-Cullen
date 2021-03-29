@@ -25,18 +25,20 @@ const Footer = (props) => {
   //   };
 
   return (
-    <FooterClass>
-      <FooterContainer>
-        <FooterRows>
-          <FooterNav />
-          <FooterLogin onClick={() => setShow(true)} />
-          <FooterForm />
-          <FooterIcons />
-        </FooterRows>
-        <FooterCopyright />
-      </FooterContainer>
+    <div>
+      <FooterClass>
+        <FooterContainer>
+          <FooterRows>
+            <FooterNav />
+            <FooterLogin onClick={() => setShow(true)} />
+            <FooterForm />
+            <FooterIcons />
+          </FooterRows>
+          <FooterCopyright />
+        </FooterContainer>
+      </FooterClass>
       <LoginModal onClose={() => setShow(false)} show={show} />
-    </FooterClass>
+    </div>
   );
 };
 

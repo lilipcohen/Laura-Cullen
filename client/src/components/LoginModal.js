@@ -7,9 +7,18 @@ const LoginModal = (props) => {
   }
 
   return (
-    <div className="modal" onClick={props.onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <div className="modal-header">
+    <div id="modal" onClick={props.onClose}>
+      <div id="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button
+          onClick={props.onClose}
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          ×
+        </button>
+        <div id="modal-header">
           <h4>Sign In</h4>
         </div>
         <form onSubmit={props.handleSubmit}>
@@ -25,7 +34,7 @@ const LoginModal = (props) => {
             value={props.value}
             onChange={props.handleChange}
           />
-          <input className="submit" type="submit" value="SIGN IN" />
+          <input id="submit" type="submit" value="SIGN IN" />
         </form>
       </div>
     </div>
