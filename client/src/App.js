@@ -8,12 +8,14 @@ function App() {
   return (
     <div>
       <Router>
-        <div>
+        <Wrapper>
           <Nav />
-          <About />
-        </div>
+         <Route exact path={["/", "/home"]} component={Home} />
+         <Route path="/about" component={About} />
+        </Wrapper>
       </Router>
-      <Footer />
+      <button onClick={() => setShow(true)}>Open Modal</button>
+      <LoginModal onClose={() => setShow(false)} show={show} />
     </div>
   );
 }
