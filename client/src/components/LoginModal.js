@@ -28,12 +28,14 @@ const LoginModal = (props) => {
             value={props.value}
             onChange={props.handleChange}
           />
+          <br></br>
           <input
             type="password"
             placeholder="Password"
             value={props.value}
             onChange={props.handleChange}
           />
+          <br></br>
           <input id="submit" type="submit" value="SIGN IN" />
         </form>
       </div>

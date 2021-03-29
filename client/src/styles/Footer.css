@@ -30,6 +30,18 @@
   opacity: 0.8;
 }
 
+.submit {
+  width: 40%;
+  color: white;
+  border: 1px solid #eee;
+  background-color: #282d32;
+}
+
+.submit:hover {
+  color: black;
+  background-color: #eee;
+}
+
 @media (max-width: 767px) {
   .footer-dark .item:not(.social) {
     text-align: center;
@@ -88,5 +100,3 @@
   font-size: 13px;
   margin-bottom: 0;
 }
-
-/* https: ; //epicbootstrap.com/snippets/footer-dark */
