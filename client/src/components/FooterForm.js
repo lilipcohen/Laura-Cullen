@@ -12,7 +12,7 @@ const FooterForm = (props) => {
           onChange={props.handleChange}
         />
         <br></br>
-        <input type="submit" value="Stay Updated" />
+        <input className="submit" type="submit" value="Stay Updated" />
       </form>
     </div>
   );
