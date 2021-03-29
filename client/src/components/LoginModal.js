@@ -7,34 +7,39 @@ const LoginModal = (props) => {
   }
 
   return (
-    <div className="modal" onClick={props.onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <div className="modal-header">
-          <h4>Login</h4>
+    <div id="modal" onClick={props.onClose}>
+      <div id="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button
+          onClick={props.onClose}
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          ×
+        </button>
+        <div id="modal-header">
+          <h4>Sign In</h4>
         </div>
         <form onSubmit={props.handleSubmit}>
-          <label>
-            email:
-            <input
-              type="text"
-              value={props.value}
-              onChange={props.handleChange}
-            />
-          </label>
-          <label>
-            password:
-            <input
-              type="text"
-              value={props.value}
-              onChange={props.handleChange}
-            />
-          </label>
-          <input type="submit" value="Submit" />
+          <input
+            type="email"
+            placeholder="Email"
+            value={props.value}
+            onChange={props.handleChange}
+          />
+          <br></br>
+          <input
+            type="password"
+            placeholder="Password"
+            value={props.value}
+            onChange={props.handleChange}
+          />
+          <br></br>
+          <input id="submit" type="submit" value="SIGN IN" />
         </form>
-        <button onClick={props.onClose}>close</button>
       </div>
     </div>
-    // </div>
   );
 };
 

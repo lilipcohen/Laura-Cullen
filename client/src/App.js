@@ -1,26 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Wrapper from "./components/Wrapper";
+import About from './components/About';
 import Nav from './components/Nav';
-import Home from './components/Home';
-import About from "./components/About";
-import LoginModal from './components/LoginModal';
-// import ModalButton from './components/ModalButton';
+import Footer from './components/Footer';
 
 function App() {
-  const [show, setShow] = useState(false);
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setShow({
-      ...show,
-      [name]: value,
-    });
-  };
-  const onSubmit = (event) => {
-    event.preventDefault();
-  };
-
   return (
     <div>
       <Router>
