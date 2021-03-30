@@ -48,6 +48,9 @@ h1 {
     width: 800px;
 }
 
+.container {
+    margin-bottom: 150px;
+}
 
 h3 {
     margin-top: 10px !important;
