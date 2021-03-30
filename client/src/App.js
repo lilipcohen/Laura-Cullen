@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Wrapper from "./components/Wrapper";
+import Home from "./components/Home";
 import About from './components/About';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -14,8 +16,7 @@ function App() {
          <Route path="/about" component={About} />
         </Wrapper>
       </Router>
-      <button onClick={() => setShow(true)}>Open Modal</button>
-      <LoginModal onClose={() => setShow(false)} show={show} />
+      <Footer />
     </div>
   );
 }
