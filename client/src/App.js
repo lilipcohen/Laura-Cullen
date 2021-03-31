@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Wrapper from './components/Wrapper';
 import Home from './components/Home';
 import About from './components/About';
+import Press from './components/Press';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Firebase from './components/Firebase';
@@ -21,6 +22,7 @@ function App() {
           <Nav />
           <Route exact path={['/', '/home']} component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/press" component={Press} />
         </Wrapper>
       </Router>
       <Footer />
