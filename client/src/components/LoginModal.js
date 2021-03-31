@@ -48,8 +48,8 @@ const LoginModal = (props) => {
   async function login() {
     try {
       await firebase.login(email, password);
+      window.location.href = '/home';
       console.log('logged in');
-      //react-router redirect
     } catch (error) {
       alert(error.message);
     }

@@ -17,7 +17,8 @@ const FooterLogin = (props) => {
   );
   async function logout() {
     await firebase.logout();
-    //react-router-dom redirect
+    window.location.href = '/home';
+    console.log('logged out');
   }
 };
 
