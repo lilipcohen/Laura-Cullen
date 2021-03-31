@@ -4,6 +4,7 @@ import Wrapper from './components/Wrapper';
 import Home from './components/Home';
 import About from './components/About';
 import Press from './components/Press';
+import Subscribers from './components/Subscribers';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Firebase from './components/Firebase';
@@ -23,6 +24,7 @@ function App() {
           <Route exact path={['/', '/home']} component={Home} />
           <Route path="/about" component={About} />
           <Route path="/press" component={Press} />
+          <Route path="/subscribers" component={Subscribers} />
         </Wrapper>
       </Router>
       <Footer />
