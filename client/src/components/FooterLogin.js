@@ -1,4 +1,5 @@
 import react from 'react';
+import firebase from './Firebase';
 
 const FooterLogin = (props) => {
   return (
@@ -8,9 +9,16 @@ const FooterLogin = (props) => {
         <li>
           <a onClick={props.onClick}>Manager Login</a>
         </li>
+        <li>
+          <a onClick={logout}>logout</a>
+        </li>
       </ul>
     </div>
   );
+  async function logout() {
+    await firebase.logout();
+    //react-router-dom redirect
+  }
 };
 
 export default FooterLogin;
