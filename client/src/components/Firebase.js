@@ -28,6 +28,11 @@ class Firebase {
       this.auth.onAuthStateChanged(resolve);
     });
   }
+  currentUser() {
+    return new Promise((resolve) => {
+      this.auth.onAuthStateChanged(resolve);
+    });
+  }
 }
 
 export default new Firebase();
