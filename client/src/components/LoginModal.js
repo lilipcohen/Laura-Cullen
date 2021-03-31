@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/LoginModal.css';
+import firebase from './Firebase';
 
 const LoginModal = (props) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   if (!props.show) {
     return null;
   }
@@ -12,7 +16,7 @@ const LoginModal = (props) => {
         <button
           onClick={props.onClose}
           type="button"
-          class="close"
+          className="close"
           data-dismiss="modal"
           aria-hidden="true"
         >
@@ -21,26 +25,35 @@ const LoginModal = (props) => {
         <div id="modal-header">
           <h4>Sign In</h4>
         </div>
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={(e) => e.preventDefault() && false}>
           <input
             type="email"
             placeholder="Email"
-            value={props.value}
-            onChange={props.handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <br></br>
           <input
             type="password"
             placeholder="Password"
-            value={props.value}
-            onChange={props.handleChange}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <br></br>
-          <input id="submit" type="submit" value="SIGN IN" />
+          <input id="submit" type="submit" value="SIGN IN" onClick={login} />
         </form>
       </div>
     </div>
   );
+  async function login() {
+    try {
+      await firebase.login(email, password);
+      console.log('logged in');
+      //react-router redirect
+    } catch (error) {
+      alert(error.message);
+    }
+  }
 };
 
 export default LoginModal;
