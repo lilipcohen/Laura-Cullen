@@ -6,13 +6,13 @@ const FooterNav = () => {
       <h3>Pages</h3>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="/home">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="/about">About</a>
         </li>
         <li>
-          <a href="#">Gallery</a>
+          <a href="/artgallery"> Art Gallery</a>
         </li>
       </ul>
     </div>

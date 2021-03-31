@@ -19,7 +19,7 @@ const About = () => {
         <Row>
           <Col xs={4}>
             <div className="name">
-              Lauren Cullen
+              Laura Cullen
               <hr></hr>
             </div>
           </Col>
