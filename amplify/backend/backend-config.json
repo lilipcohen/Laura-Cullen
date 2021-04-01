@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "lauracullen1f02a4f9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "lcresource": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
