@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Wrapper from './components/Wrapper';
 import Home from './components/Home';
 import About from './components/About';
+import Gallery from './components/Gallery';
 import Press from './components/Press';
 import Subscribers from './components/Subscribers';
 import Nav from './components/Nav';
@@ -24,6 +25,7 @@ function App() {
           <Nav />
           <Route exact path={['/', '/home']} component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/gallery" component={Gallery} />
           <Route path="/press" component={Press} />
           <Route path="/subscribers" component={Subscribers} />
         </Wrapper>
