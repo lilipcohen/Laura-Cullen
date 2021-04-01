@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "image": "/images/gaslight.JPG",
+        "url": "https://i.imgur.com/AF1otEn.png"
+    },
+    {
+        "id": 2,
+        "image": "/images/red.JPG",
+        "url": "https://i.imgur.com/LoZojQU.jpg"
+    },
+    {
+        "id": 3,
+        "image": "/images/creativespace.png",
+        "url": "https://i.imgur.com/aWsa2xC.png"
+    },
+    {
+        "id": 4,
+        "image": "/images/artstudio.png",
+        "url": "https://i.imgur.com/dGz1KZz.jpg"
+    },
+    {
+        "id": 5,
+        "image": "/images/artspace.png",
+        "url": "https://i.imgur.com/YrR0b2U.png"
+    }
+]
