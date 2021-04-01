@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Firebase from './components/Firebase';
 
+
 function App() {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false);
   useEffect(() => {
