@@ -82,7 +82,7 @@ const Home = () => {
       </Parallax>
 
       <Container>
-        <Row>
+        <Row className="publications">
           <Col>
             <img src={img1} alt="img1" />
             <h3>Gaslight</h3>
