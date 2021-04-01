@@ -46,6 +46,18 @@ function Nav() {
                 Art Gallery
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/press"
+                className={
+                  window.location.pathname === '/press'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
+                Press
+              </Link>
+            </li>
           </ul>
         </div>
       </>

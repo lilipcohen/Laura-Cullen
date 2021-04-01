@@ -15,28 +15,28 @@ const Press = () => {
         </div>
       </Parallax>
 
-      <div className='ui container cards blog'>
+      <div className='ui special cards container blog'>
         <div className='card'>
           <div class='blurring dimmable image'>
             <div class='ui dimmer'>
               <div class='content'>
                 <div class='center'>
-                  <div class='ui inverted button'>See Article</div>
+                  <button class='ui button'>See Article</button>
                 </div>
               </div>
             </div>
-            <img src={faker.image.nature()} alt='avatar' />
+            <img src={faker.image.nature()} alt='article cover photo' />
           </div>
           
           <div className='content'>
-          <div className="header">People Mag</div>
+          <a className="header">People Mag</a>
             <div className='meta'>
               <span className='date'>Written on June 2020</span>
             </div>
             <div className='description'>
               Laura is the best artist in all the land.
             </div>
-            <button className='button'>Full Article</button>
+            <button className='ui button'>Full Article</button>
           </div>
         </div>
       </div>

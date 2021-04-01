@@ -9,10 +9,6 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Firebase from './components/Firebase';
 
-// const HomePage = () => {
-//   return <div>HomePage</div>;
-// };
-
 
 function App() {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false);
