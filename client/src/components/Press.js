@@ -15,8 +15,8 @@ const Press = () => {
         </div>
       </Parallax>
 
-      <div className='ui container cards'>
-        <div className='cards blog'>
+      <div className='ui container cards blog'>
+        <div className='card'>
           <div class='blurring dimmable image'>
             <div class='ui dimmer'>
               <div class='content'>
@@ -28,7 +28,7 @@ const Press = () => {
             <img src={faker.image.nature()} alt='avatar' />
           </div>
           
-          <div className='contnet'>
+          <div className='content'>
           <div className="header">People Mag</div>
             <div className='meta'>
               <span className='date'>Written on June 2020</span>
@@ -36,7 +36,7 @@ const Press = () => {
             <div className='description'>
               Laura is the best artist in all the land.
             </div>
-            <div className='button'>Full Article</div>
+            <button className='button'>Full Article</button>
           </div>
         </div>
       </div>
