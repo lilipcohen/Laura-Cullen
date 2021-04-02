@@ -128,6 +128,18 @@ function Nav() {
                 Subscribers
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/blogs"
+                className={
+                  window.location.pathname === '/blogs'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
+                Blogs
+              </Link>
+            </li>
           </ul>
         </div>
       </>
