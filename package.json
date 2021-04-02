@@ -9,6 +9,7 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "install": "cd client && npm install",
@@ -22,6 +23,7 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "amplify": "0.0.11",
     "aws-amplify": "^3.3.26",
     "aws-amplify-react": "^4.2.30",

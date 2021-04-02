@@ -106,6 +106,18 @@ function Nav() {
             </li>
             <li className="nav-item">
               <Link
+                to="/press"
+                className={
+                  window.location.pathname === '/press'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
+                Press
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
                 to="/subscribers"
                 className={
                   window.location.pathname === '/subscribers'
