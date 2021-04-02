@@ -1,27 +1,10 @@
 {
-  "name": "laura-cullen",
-  "homepage": "https://lilipcohen.github.io/Laura-Cullen/",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
-  },
   "dependencies": {
+    "amplify": "0.0.11",
+    "aws-amplify": "^3.3.26",
+    "aws-amplify-react": "^4.2.30",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "faker": "^5.5.2",
@@ -29,5 +12,27 @@
     "mongodb": "^3.6.5",
     "mongoose": "^5.12.2",
     "react-router-dom": "^5.2.0"
-  }
+  },
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "homepage": "https://lilipcohen.github.io/Laura-Cullen/",
+  "license": "ISC",
+  "main": "server.js",
+  "name": "laura-cullen",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "client": "cd client && npm run start",
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "npm run build",
+    "install": "cd client && npm install",
+    "predeploy": "npm run build",
+    "seed": "node scripts/seedDB.js",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "start:prod": "node server.js"
+  },
+  "version": "1.0.0"
 }

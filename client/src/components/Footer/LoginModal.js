@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/LoginModal.css';
-import firebase from './Firebase';
+import '../../styles/LoginModal.css';
+import firebase from '../Firebase';
 
 const LoginModal = (props) => {
   const [email, setEmail] = useState('');
