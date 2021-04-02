@@ -6,9 +6,8 @@ import About from './components/About';
 import Press from './components/Press';
 import Subscribers from './components/Subscribers';
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Firebase from './components/Firebase';
-
 
 function App() {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false);

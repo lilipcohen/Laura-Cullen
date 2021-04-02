@@ -1,5 +1,5 @@
 import react from 'react';
-import firebase from './Firebase';
+import firebase from '../Firebase';
 
 const FooterLogin = (props) => {
   return (
