@@ -17,4 +17,5 @@ export default {
     saveBlog: function(blogData) {
         return axios.post("/api/blogs", blogData);
     }
+    
 };
