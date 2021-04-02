@@ -1,0 +1,22 @@
+.first-series {
+    margin-top: 100px;
+}
+
+.desc h1 {
+    text-align: left !important;
+    margin-right: 50px;
+}
+
+p {
+    line-height: 2.5
+}
+
+#gaslight {
+    height: 500px;
+    width: 100%;
+}
+
+.desc {
+    margin-top: 100px;
+}
+

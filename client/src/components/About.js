@@ -16,7 +16,7 @@ const About = () => {
         </div>
       </Parallax>
       <Container>
-        <Row>
+        <Row className="aboutme">
           <Col xs={4}>
             <div className="name">
               Laura Cullen
@@ -57,17 +57,12 @@ const About = () => {
         </Row>
       </Container>
 
-      <Parallax>
-        <div style={{ height: 200 }}>
-          <div className="about"></div>
-        </div>
-      </Parallax>
       <Parallax bgImage={creativespace} strength={500}>
         <div style={{ height: 700 }}>
-          <div className="about">Poem</div>
+          <div className="poem">Poem</div>
         </div>
       </Parallax>
-      <div className="poem">
+      <div className="poempage">
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -91,7 +86,7 @@ const About = () => {
         <img src={red} alt="red" className="red" />
       </div>
 
-      <div style={{ height: '100vh' }}></div>
+      <div style={{ height: '25vh' }}></div>
     </div>
   );
 };

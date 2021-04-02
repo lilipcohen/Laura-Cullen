@@ -1,4 +1,5 @@
-.about {
+.about,
+.poem {
     color: white;
     font-size: 60px;
     left: 50%;
@@ -7,22 +8,21 @@
     transform: translate(-50%, -50%);
 }
 
-
-.row {
-    margin-top: 150px;
+.aboutme {
+    margin-top: 100px;
 }
 
-/* .name {
-    font-size: 35px;
-} */
-
-/* .about-desc {
+.name {
     font-size: 20px;
-} */
+} 
+
+ .about-desc {
+    font-size: 15px;
+}
 
 
 
-.poem {
+.poempage {
     line-height: 2;
     text-align: center;
     margin-left: auto;
@@ -32,14 +32,10 @@
     margin-top: 100px;
 } 
 
-.gaslight,
-.red {
-    width: auto;
-    height: 500px;
-    margin-top: 30px;
+.poempage img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 12px;
 }
 
-.gaslight {
-    margin-right: 50px;
-    
-}
