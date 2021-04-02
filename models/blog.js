@@ -8,7 +8,9 @@ const blogSchema = new Schema({
     },
     description: String,
     date: { type: Date, default: Date.now 
-    }
+    },
+    link: { type: String, required: true },
+    src: { type: String, required: true }
 });
 
 const Blog = mongoose.model("Blog",

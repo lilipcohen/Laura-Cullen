@@ -1,45 +1,56 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
-import { Container, Col, Row } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
+import API from '../utils/API';
+import { Link } from 'react-router-dom';
+import { List, ListItem } from './List';
 import faker from 'faker';
 import studio from '../images/studio.png';
 import '../styles/Press.css';
+import PressCard from '../components/PressCard'
 
 const Press = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  // Load all blogs and store them with setBlogs
+  useEffect(() => {
+    loadBlogs();
+  }, []);
+
+  // Loads all blogs and sets them to blogs
+  function loadBlogs() {
+    API.getBlogs()
+      .then(res => {
+        setBlogs(res.data);
+      })
+      .catch(err => console.log(err));
+  }
+
   return (
     <div>
       <Parallax bgImage={studio} strength={500}>
-        <div style={{ height: 700 }}>
+        <div style={{ height: 400 }}>
           <div className='about'>Press</div>
         </div>
       </Parallax>
 
-      <div className='ui special cards container blog'>
-        <div className='card'>
-          <div class='blurring dimmable image'>
-            <div class='ui dimmer'>
-              <div class='content'>
-                <div class='center'>
-                  <button class='ui button'>See Article</button>
-                </div>
+    
+      {blogs.length ? (
+        <div className='ui special cards container blog'>
+                {blogs.map(blog => (
+                 
+                    <PressCard 
+                     link={blog.link}
+                      src={blog.src}
+                      date={blog.date}
+                      description={blog.description}
+                      title={blog.title}
+                      author={blog.author}
+                    />
+                ))}
               </div>
-            </div>
-            <img src={faker.image.nature()} alt='article cover photo' />
-          </div>
-
-          <div className='content'>
-            <a className="header">People Mag</a>
-            <div className='meta'>
-              <span className='date'>Written on June 2020</span>
-            </div>
-            <div className='description'>
-              Laura is the best artist in all the land.
-            </div>
-            <button className='ui button'>Full Article</button>
-          </div>
-        </div>
-      </div>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
     </div>
   );
 };
