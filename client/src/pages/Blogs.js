@@ -19,39 +19,39 @@ function Blogs() {
   // Loads all blogs and sets them to blogs
   function loadBlogs() {
     API.getBlogs()
-      .then(res => { console.log(res.data) 
-        setBlogs(res.data)
-    })
-      .catch(err => console.log(err));
-  };
+      .then((res) => {
+        setBlogs(res.data);
+      })
+      .catch((err) => console.log(err));
+  }
 
   // Deletes a blog from the database with a given id, then reloads
   function deleteBlog(id) {
-      API.deleteBlog(id)
-      .then(res => loadBlogs())
-      .catch(err => console.log(err));
+    API.deleteBlog(id)
+      .then((res) => loadBlogs())
+      .catch((err) => console.log(err));
   }
 
   // Handles updating components state when user types into input field
   function handleInputChange(event) {
-      const { name, value } = event.target;
-      setFormObject({...formObject, [name]: value})
-  };
+    const { name, value } = event.target;
+    setFormObject({ ...formObject, [name]: value });
+  }
 
   // When form is submitted, use the API.saveBlog method to save the blog data
   // Then reload blogs from the database
   function handleFormSubmit(event) {
-      event.preventDefault();
-      if (formObject.title && formObject.author) {
-          API.saveBlog({
-              title: formObject.title,
-              author: formObject.author,
-              description: formObject.description
-          })
-          .then(res => loadBlogs())
-          .catch(err => console.log(err));
-      }
-  };
+    event.preventDefault();
+    if (formObject.title && formObject.author) {
+      API.saveBlog({
+        title: formObject.title,
+        author: formObject.author,
+        description: formObject.description,
+      })
+        .then((res) => loadBlogs())
+        .catch((err) => console.log(err));
+    }
+  }
 
   return (
     <Container fluid>
@@ -90,11 +90,9 @@ function Blogs() {
           </Jumbotron>
           {blogs.length ? (
             <List>
-              {blogs.map(blog => 
-              (
-                
+              {blogs.map((blog) => (
                 <ListItem key={blog._id}>
-                  <Link to={"/blogs/" + blog._id}>
+                  <Link to={'/blogs/' + blog._id}>
                     <strong>
                       {blog.title} by {blog.author}
                     </strong>
@@ -111,6 +109,5 @@ function Blogs() {
     </Container>
   );
 }
-
 
 export default Blogs;

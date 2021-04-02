@@ -8,7 +8,7 @@ import FooterNav from './FooterNav';
 import FooterRows from './FooterRows';
 import FooterContainer from './FooterContainer';
 import FooterClass from './FooterClass';
-import '../styles/Footer.css';
+import '../../styles/Footer.css';
 
 const Footer = (props) => {
   const [show, setShow] = useState(false);

@@ -7,7 +7,7 @@ import Gallery from './components/Gallery';
 import Press from './components/Press';
 import Subscribers from './components/Subscribers';
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Firebase from './components/Firebase';
 import Blogs from './pages/Blogs';
 // import Detail from './pages/Detail';
