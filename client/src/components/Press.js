@@ -27,9 +27,9 @@ const Press = () => {
             </div>
             <img src={faker.image.nature()} alt='article cover photo' />
           </div>
-          
+
           <div className='content'>
-          <a className="header">People Mag</a>
+            <a className="header">People Mag</a>
             <div className='meta'>
               <span className='date'>Written on June 2020</span>
             </div>
