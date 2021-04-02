@@ -19,11 +19,13 @@ function Blogs() {
   // Loads all blogs and sets them to blogs
   function loadBlogs() {
     API.getBlogs()
-      .then(res => setBlogs(res.data))
+      .then(res => { console.log(res.data) 
+        setBlogs(res.data)
+    })
       .catch(err => console.log(err));
   };
 
-  // Deletes a blog from teh database with a given id, then reloads
+  // Deletes a blog from the database with a given id, then reloads
   function deleteBlog(id) {
       API.deleteBlog(id)
       .then(res => loadBlogs())
@@ -88,7 +90,9 @@ function Blogs() {
           </Jumbotron>
           {blogs.length ? (
             <List>
-              {blogs.map(blog => (
+              {blogs.map(blog => 
+              (
+                
                 <ListItem key={blog._id}>
                   <Link to={"/blogs/" + blog._id}>
                     <strong>
