@@ -11,7 +11,8 @@ p {
     line-height: 2.5
 }
 
-#gaslight {
+#gaslight,
+#red {
     height: 500px;
     width: 100%;
 }

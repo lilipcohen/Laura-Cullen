@@ -5,6 +5,7 @@ import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import imageBank from "../images.json";
 import creativespace from "../images/creativespace.png";
 import gaslight from "../images/gaslight.JPG";
+import red from "../images/red.JPG";
 import ImageGallery from "./ImageGallery";
 import "../styles/Gallery.css";
 
@@ -72,7 +73,7 @@ class Gallery extends Component {
                             </div>
                         </Col>
                         {<Col md="6" className="carousel">
-                            <img src={gaslight} alt="gaslight" id="gaslight" />
+                            <img src={red} alt="red" id="red" />
                            
                            
 

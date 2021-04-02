@@ -35,11 +35,11 @@ class ImageCarousel extends React.Component {
         this.setState({ activeIndex: nextIndex });
     }
 
-    goToIndex = newIndex => {
-        const { animating } = this.state;
-        if (animating) return;
-        this.setState({ activeIndex: newIndex });
-      };
+    // goToIndex = newIndex => {
+    //     const { animating } = this.state;
+    //     if (animating) return;
+    //     this.setState({ activeIndex: newIndex });
+    //   };
     
       setAnimating = value => {
         this.setState({
