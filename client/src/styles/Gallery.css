@@ -2,6 +2,11 @@
     margin-top: 100px;
 }
 
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .desc h1 {
     text-align: left !important;
     margin-right: 50px;
