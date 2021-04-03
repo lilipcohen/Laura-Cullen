@@ -9,7 +9,7 @@ import Subscribers from './components/Subscribers';
 import Nav from './components/Nav';
 import Footer from './components/Footer/Footer';
 import Firebase from './components/Firebase';
-import Blogs from './pages/Blogs';
+import Blogs from './components/Blogs';
 // import Detail from './pages/Detail';
 // import NoMatch from './pages/NoMatch';
 
@@ -29,10 +29,8 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/press" component={Press} />
+          <Route path="/blogs" component={Blogs} />
           <Route path="/subscribers" component={Subscribers} />
-          <Route exact path={'/blogs'}>
-              <Blogs />
-            </Route>
         </Wrapper>
       </Router>
       <Footer />

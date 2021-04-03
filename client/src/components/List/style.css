@@ -11,7 +11,7 @@
   }
   
   .list-overflow-container li {
-    border-radius: 0px;
+    border-radius: 15px;
     border-left: none;
     border-right: none;
   }
@@ -21,7 +21,7 @@
   }
   
   .list-overflow-container li a {
-    color: #2A878C;
+    color: black;
   }
   
   .list-overflow-container li:first-child {
