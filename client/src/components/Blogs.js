@@ -63,10 +63,11 @@ function Blogs() {
         </div>
       </Parallax>
 
-      <Container>
-        <Row className='blog'>
+      <Container style={{ marginTop: 50, paddingTop: 100 }}>
+        <Row>
           <Col size='md-6'>
-            <h1 style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}>Add a blog</h1>
+            <h1 style={{ height: 300, paddingTop: 120, paddingBottom: 20, textAlign: "center" }}>Add a blog</h1>
+            <br/>
 
             <form>
               <Input
@@ -79,11 +80,22 @@ function Blogs() {
                 name='author'
                 placeholder='Author (required)'
               />
+              <Input
+                onChange={handleInputChange}
+                name='src'
+                placeholder='Image link (required)'
+              />
+              <Input
+                onChange={handleInputChange}
+                name='link'
+                placeholder='Article link (required)'
+              />
               <TextArea
                 onChange={handleInputChange}
                 name='description'
-                placeholder='Description (Optional)'
+                placeholder='Description (required)'
               />
+              
               <FormBtn
                 disabled={!(formObject.author && formObject.title)}
                 onClick={handleFormSubmit}
@@ -93,9 +105,10 @@ function Blogs() {
             </form>
           </Col>
           <Col size='md-6 sm-12'>
-            <h1>
-              <h1 style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}>Blog list</h1>
+            
+            <h1 style={{ paddingTop: 120, paddingBottom: 20, textAlign: "center" }}>Blog list
             </h1>
+            
             {blogs.length ? (
               <List>
                 {blogs.map(blog => (
