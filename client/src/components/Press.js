@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import API from '../utils/API';
-import { Link } from 'react-router-dom';
-import { List, ListItem } from './List';
-import faker from 'faker';
 import studio from '../images/studio.png';
 import '../styles/Press.css';
 import PressCard from '../components/PressCard'
@@ -35,7 +32,8 @@ const Press = () => {
 
     
       {blogs.length ? (
-        <div className='ui special cards container blog'>
+        <div className='ui special cards container center blog'
+        style={{ width: 950 }}>
                 {blogs.map(blog => (
                  
                     <PressCard 
