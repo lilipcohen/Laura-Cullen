@@ -13,17 +13,6 @@ import '../../styles/Footer.css';
 const Footer = (props) => {
   const [show, setShow] = useState(false);
 
-  //   const handleChange = (event) => {
-  //     const { name, value } = event.target;
-  //     setShow({
-  //       ...show,
-  //       [name]: value,
-  //     });
-  //   };
-  //   const onSubmit = (event) => {
-  //     event.preventDefault();
-  //   };
-
   return (
     <div>
       <FooterClass>
