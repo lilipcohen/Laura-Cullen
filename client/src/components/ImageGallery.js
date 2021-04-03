@@ -6,12 +6,12 @@ import {
     Row,
     Container,
     Card,
-    CardImg,
-    Button,
+    CardImg
     
 } from "reactstrap";
 
 import ImageCarousel from "./ImageCarousel";
+
 
 
 class ImageGallery extends React.Component {
@@ -26,11 +26,11 @@ class ImageGallery extends React.Component {
 
 
 
-    static shareState(props, state) {
-        const { images, limit } = this.props;
-        const imagesToShow = props.hasOwnProperty("limit") ? limit : 4;
-        return { images, imagesToShow };
-    }
+    // static shareState(props, state) {
+    //     const { images, limit } = this.props;
+    //     const imagesToShow = props.hasOwnProperty("limit") ? limit : 4;
+    //     return { images, imagesToShow };
+    // }
 
     toggleModal = () => {
         this.setState({
@@ -42,40 +42,40 @@ class ImageGallery extends React.Component {
         this.toggleModal();
         this.setState({
             currentIndex: imageId
+            
         })
+       
     }
 
+
     render() {
-        const { images, limit } = this.props;
+        const { images } = this.props;
         const { isModalOpen, imagesToShow, currentIndex } = this.state;
-        const tempImagesArray = images.slice(0, images);
-        // const hasMore = images.length !== 0 ? images.length - imagesToShow : 0;
-        console.log("ihmages", tempImagesArray)
+        
+    
+        
+        
         return <Container>
 
             <Row>
-                <Col md={{ size: 10, offset: 1 }} className="thumbnail-gallery">
-                    {/* <h5 className="text-center my-3">Reactstrap Image Gallery</h5> */}
-                    
+                <Col className="thumbnail-gallery">
                     <Row>
                        
                         {images.map((image, index) => {
+                            console.log(image)
                             return (
                                 <Col
-                                    md="3"
+                                
+                                    // md="3"
                                     className="my-2"
                                     key={index}
                                     onClick={() => this.showModalImage(index)}
+                                    
                                 >
+                                    
                                     <Card className="image-card">
-                                        {console.log("path:", image.image)}
                                         <CardImg src={image.image} height="75vh"/>
-                                        {/* {hasMore !== 0 && index === imagesToShow - 1 ? (
-                                        <CardImgOverlay className="overlay">
-                                            <h2 className="mb-0">{hasMore}</h2>
-                                            <small> More </small>
-                                        </CardImgOverlay>
-                                    ) : null} */}
+                                        
                                     </Card>
 
                                 </Col>

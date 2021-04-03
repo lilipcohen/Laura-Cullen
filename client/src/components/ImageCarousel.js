@@ -23,7 +23,7 @@ class ImageCarousel extends React.Component {
         const { animating, activeIndex } = this.state;
         const { images } = this.props;
         if (animating) return;
-        const nextIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
+        const nextIndex = activeIndex >= images.length - 1 ? 0 : activeIndex + 1;
         this.setState({ activeIndex: nextIndex });
     };
 
@@ -31,15 +31,15 @@ class ImageCarousel extends React.Component {
         const { animating, activeIndex } = this.state;
         const { images } = this.props;
         if (animating) return;
-        const nextIndex = activeIndex === 0 ? images.length - 1 : activeIndex + 1;
+        const nextIndex = activeIndex <= 0 ? images.length - 1 : activeIndex - 1;
         this.setState({ activeIndex: nextIndex });
     }
 
-    goToIndex = newIndex => {
-        const { animating } = this.state;
-        if (animating) return;
-        this.setState({ activeIndex: newIndex });
-      };
+    // goToIndex = newIndex => {
+    //     const { animating } = this.state;
+    //     if (animating) return;
+    //     this.setState({ activeIndex: newIndex });
+    //   };
     
       setAnimating = value => {
         this.setState({
