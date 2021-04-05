@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
+import { Container, Row, Col } from 'react-bootstrap';
 import API from '../utils/API';
 import studio from '../images/studio.png';
 import '../styles/Press.css';
-import PressCard from '../components/PressCard'
+import PressCard from '../components/PressCard';
 
 const Press = () => {
   const [blogs, setBlogs] = useState([]);
@@ -30,25 +31,31 @@ const Press = () => {
         </div>
       </Parallax>
 
-    
-      {blogs.length ? (
-        <div className='ui special cards container center blog'
-        style={{ width: 950 }}>
+      <Container fluid>
+        <Row>
+          <Col>
+            {blogs.length ? (
+              <div
+                className='ui special cards container center blog'
+                style={{ width: 950 }}
+              >
                 {blogs.map(blog => (
-                 
-                    <PressCard 
-                     link={blog.link}
-                      src={blog.src}
-                      date={blog.date}
-                      description={blog.description}
-                      title={blog.title}
-                      author={blog.author}
-                    />
+                  <PressCard
+                    link={blog.link}
+                    src={blog.src}
+                    date={blog.date}
+                    description={blog.description}
+                    title={blog.title}
+                    author={blog.author}
+                  />
                 ))}
               </div>
             ) : (
               <h3>No Results to Display</h3>
             )}
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

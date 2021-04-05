@@ -17,15 +17,15 @@ const About = () => {
       </Parallax>
       <Container>
         <Row className="aboutme">
-          <Col xs={4}>
+          <Col lg={4}>
             <div className="name">
               Laura Cullen
               <hr></hr>
             </div>
           </Col>
-          <hr></hr>
+          
 
-          <Col xs={8}>
+          <Col lg={8}>
             <div className="about-desc">
               <p>
                 Laura Cullen is a California-based contemporary artist residing
@@ -62,6 +62,8 @@ const About = () => {
           <div className="poem">Poem</div>
         </div>
       </Parallax>
+
+      <Container>
       <div className="poempage">
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -85,6 +87,7 @@ const About = () => {
         <img src={gaslight} alt="gaslight" className="gaslight" />
         <img src={red} alt="red" className="red" />
       </div>
+      </Container>
 
       <div style={{ height: '25vh' }}></div>
     </div>

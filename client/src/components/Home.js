@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Container, Col, Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button'
 import '../styles/Home.css';
 import artstudio from '../images/artstudio.png';
 import artspace from '../images/artspace.png';
@@ -18,7 +19,10 @@ const Home = () => {
         </div>
       </Parallax>
 
+      <Container>
       <div className="summary">
+      <Row>
+      <Col lg={true}>
         <h1>
           Laura Cullen has long combined abstract florals and dreamlike imagery,
           inspired by one of life's powerfully evocative question:
@@ -28,7 +32,10 @@ const Home = () => {
           gave those yearnings a sanctuary of beauty and purpose?
         </h2>
         <div className="icon">♦︎</div>
+        </Col>
+        </Row>
       </div>
+      </Container>
 
       <Parallax bgImage={gaslight} strength={500}>
         <div style={{ height: 800 }}>
@@ -38,13 +45,13 @@ const Home = () => {
 
       <Container className="recent-work">
         <Row>
-          <Col xs={4}>
+          <Col lg={4} sm={true}>
             <div className="recent">
               <h2>Gaslight</h2>
             </div>
           </Col>
 
-          <Col xs={8}>
+          <Col lg={8} sm={true}>
             <hr></hr>
           </Col>
 
@@ -67,8 +74,8 @@ const Home = () => {
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non
               </p>
-            </div>
-            <button>View</button>
+            </div><br/>
+            <Button variant="info">View</Button>{''}
           </Col>
         </Row>
       </Container>

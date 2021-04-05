@@ -32,7 +32,7 @@ class Gallery extends Component {
                         <div className="title">Gallery</div>
                     </div>
                 </Parallax>
-                <Container>
+                <Container className="container">
                     <Row className="desc">
                         <Col md="6">
                             <div className="first-series">
