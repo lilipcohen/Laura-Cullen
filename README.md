@@ -35,7 +35,7 @@ npm start
 
 ## Usage
 *Instructions and examples for use:* 
-* For users there are four main pages and when Laura logs in she has access to two additional pages.  
+* There are six pages in total that make up Laura's website. For users there are four main pages - Home, About, Gallery and Press. When Laura logs in through her manager portal she has access to two additional pages - blogs, and newsletter.  
 1. Home page:
     1. The home page features images of Laura's studio and a poem written by Laura at the top
     2. Recent work and exhibits as you scroll down the page. 
@@ -45,8 +45,6 @@ npm start
     1. This is where users can veiw Laura's different collections. 
 4. Press page:
     1. Features write ups from press outlets as well as blog posts that Laura can enter herself. 
- 
-* Laura has a manager portal where she has access to two more pages where she can login to update her blogs as well as retrieve her email sign ups. <br>
 5. Blogs page:
      1. There is an entry form on this page that allowes Laura to enter Title, author, image, and description for blogs and press.
      2. The information she enters will be updated into the MongoDB data base and will be displayed on the press page for users to see.
