@@ -50,7 +50,7 @@ npm start
      1. When someone signs up on the home page their email will go into a MongoDB database
      2. These emails become visible on the backend of the site where Laura can get grab them to send out her newsletter.
 
-<img src="./client/src/images/LaurasPage.gif">
+<img src="./client/public/images/LaurasPage.gif">
 
 
 ## License 
