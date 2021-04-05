@@ -46,7 +46,7 @@ npm start
 4. Press page:
     1. Features write ups from press outlets as well as blog posts that Laura can enter herself. 
  <br>
-* Laura has a manager portal where she has access to two more pages where she can login to update her blogs as well as retrieve her email sign ups.
+* Laura has a manager portal where she has access to two more pages where she can login to update her blogs as well as retrieve her email sign ups. <br>
 1. Blogs page:
     1. There is an entry form on this page that allowes Laura to enter Title, author, image, and description for blogs and press.
     2. The information she enters will be updated into the MongoDB data base and will be displayed on the press page for users to see.
@@ -76,10 +76,10 @@ npm start
 #### If you have any questions or want to make a contribution please reach out to us here:
 <br>
 
-**GitHub:** 
-* @tomarapetty 
+**GitHub:**  
 * @lilipcohen 
 * @markos-escalante 
+* @tomarapetty
 * @katnguyenn 
 * @ellisd16 <br>
 
