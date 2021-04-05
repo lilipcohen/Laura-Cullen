@@ -47,12 +47,12 @@ npm start
     1. Features write ups from press outlets as well as blog posts that Laura can enter herself. 
  <br>
 * Laura has a manager portal where she has access to two more pages where she can login to update her blogs as well as retrieve her email sign ups. <br>
-1. Blogs page:
-    1. There is an entry form on this page that allowes Laura to enter Title, author, image, and description for blogs and press.
-    2. The information she enters will be updated into the MongoDB data base and will be displayed on the press page for users to see.
-2. Newsletter page:
-    1. When someone signs up on the home page their email will go into a MongoDB database  
-    2. These emails become visible on the backend of the site where Laura can get grab them to send out her newsletter. 
+          1. Blogs page
+              1. There is an entry form on this page that allowes Laura to enter Title, author, image, and description for blogs and press.
+              2. The information she enters will be updated into the MongoDB data base and will be displayed on the press page for users to see.
+          2. Newsletter page:
+              1. When someone signs up on the home page their email will go into a MongoDB database
+              2. These emails become visible on the backend of the site where Laura can get grab them to send out her newsletter.
 
 ## License 
 * Built under the MIT licence.
