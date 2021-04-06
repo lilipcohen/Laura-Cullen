@@ -26,3 +26,35 @@ p {
     margin-top: 100px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 1000px !important;
+    }
+    #gaslight,
+    #red {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .container {
+        margin: 25px 0 !important;
+    }
+    .first-series h1 {
+        text-align: center !important;
+        margin: 5px 0 !important;
+    }
+
+    .card img {
+        height: 5vh;
+    }
+
+    #gaslight,
+    #red {
+        height: 300px;
+    }
+
+    .carousel {
+        flex-direction: column-reverse;
+    }
+}
