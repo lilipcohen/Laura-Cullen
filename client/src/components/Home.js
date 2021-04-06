@@ -55,8 +55,8 @@ const Home = () => {
             <hr></hr>
           </Col>
 
-          <Col xs={4} />
-          <Col xs={8}>
+          <Col xs={4} className="col-nodesc" />
+          <Col xs={8} className="desc">
             <div className="recent-desc">
               <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
