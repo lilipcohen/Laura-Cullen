@@ -89,7 +89,7 @@ const About = () => {
       </div>
       </Container>
 
-      <div style={{ height: '25vh' }}></div>
+      <div className="before-footer" style={{ height: '25vh' }}></div>
     </div>
   );
 };

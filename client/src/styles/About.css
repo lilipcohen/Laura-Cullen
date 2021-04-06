@@ -40,3 +40,23 @@
     margin: 12px;
 }
 
+
+@media screen and (max-width: 812px) {
+    .about,
+    .poem {
+        bottom: 0;
+    }
+
+    .name {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .about-desc {
+        text-align: center;
+    }
+
+    .before-footer {
+        height: 5vh !important;
+    }
+}
