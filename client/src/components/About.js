@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
       <Parallax bgImage={studio} strength={500}>
-        <div style={{ height: 700 }}>
+        <div style={{ height: 800 }}>
           <div className="about">About</div>
         </div>
       </Parallax>
@@ -58,7 +58,7 @@ const About = () => {
       </Container>
 
       <Parallax bgImage={creativespace} strength={500}>
-        <div style={{ height: 700 }}>
+        <div style={{ height: 800 }}>
           <div className="poem">Poem</div>
         </div>
       </Parallax>
@@ -89,7 +89,7 @@ const About = () => {
       </div>
       </Container>
 
-      <div style={{ height: '25vh' }}></div>
+      <div className="before-footer" style={{ height: '25vh' }}></div>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <Parallax bgImage={artstudio} strength={500}>
-        <div style={{ height: 800 }}>
+        <div style={{ height: 900 }}>
           <div className="title">Laura Cullen</div>
         </div>
       </Parallax>
@@ -38,7 +38,7 @@ const Home = () => {
       </Container>
 
       <Parallax bgImage={gaslight} strength={500}>
-        <div style={{ height: 800 }}>
+        <div style={{ height: 900 }}>
           <div className="title">Recent Work</div>
         </div>
       </Parallax>
@@ -55,8 +55,8 @@ const Home = () => {
             <hr></hr>
           </Col>
 
-          <Col xs={4} />
-          <Col xs={8}>
+          <Col xs={4} className="col-nodesc" />
+          <Col xs={8} className="desc">
             <div className="recent-desc">
               <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse

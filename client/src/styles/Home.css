@@ -49,10 +49,6 @@ h1 {
     width: 100%;
 }
 
-/* .container {
-    margin-bottom: 150px;
-} */
-
 h3 {
     margin-top: 10px !important;
     font-size: 24px !important;
@@ -63,8 +59,67 @@ h3 {
     margin-bottom: 100px;
 }
 
-@media screen {
+@media screen and (max-width: 1024px) {
+    .recent h2 {
+        text-align: center;
+    }
+
+    .upcoming {
+        margin-bottom: 0 ;
+    }
     
+    .publications p {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 812px) {
+    .react-parallax {
+        height: 500px;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 45px;
+        bottom: 0;
+    }
+    .upcoming {
+        font-size: 40px;
+        bottom: 0;
+        margin-bottom: -150px;
+    }
+
+    .summary {
+        padding: 0;
+    }
+    .summary h1 {
+        font-size: 25px !important;
+    }
+    .recent h2 {
+        text-align: center;
+    }
+    .col-nodesc {
+        padding: 0;
+      
+    }
+    .desc {
+        padding: 0;
+        text-align: center;
+        margin: 0 !important;
+        flex: 1 90% !important;
+        max-width: 100% !important;
+       
+    }
+
+    .publications .col,
+    .recent-work .col-lg-8 {
+        flex-basis: auto;
+        flex-grow: 0;
+        margin-bottom: 10px;
+    }
+   
 }
 
 

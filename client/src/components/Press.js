@@ -26,8 +26,8 @@ const Press = () => {
   return (
     <div>
       <Parallax bgImage={studio} strength={500}>
-        <div style={{ height: 400 }}>
-          <div className='about'>Press</div>
+        <div style={{ height: 500 }}>
+          <div className='press'>Press</div>
         </div>
       </Parallax>
 
@@ -37,6 +37,7 @@ const Press = () => {
             {blogs.length ? (
               <div
                 className='ui special cards container center blog'
+                id="ui"
                 style={{ width: 950 }}
               >
                 {blogs.map(blog => (
