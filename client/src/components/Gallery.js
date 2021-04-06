@@ -28,7 +28,7 @@ class Gallery extends Component {
         return (
             <>
                 <Parallax bgImage={creativespace} strength={500}>
-                    <div style={{ height: 800 }}>
+                    <div style={{ height: 900 }}>
                         <div className="title">Gallery</div>
                     </div>
                 </Parallax>
@@ -56,7 +56,7 @@ class Gallery extends Component {
                 </Container>
 
                 <Parallax bgImage={creativespace} strength={500}>
-                    <div style={{ height: 800 }}>
+                    <div style={{ height: 900 }}>
                         <div className="title"></div>
                     </div>
                 </Parallax>

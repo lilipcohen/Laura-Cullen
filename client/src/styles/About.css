@@ -45,6 +45,7 @@
     .about,
     .poem {
         bottom: 0;
+        font-size: 45px;
     }
 
     .name {

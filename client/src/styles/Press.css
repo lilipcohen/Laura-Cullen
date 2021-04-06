@@ -17,4 +17,11 @@
     #ui {
         width: 640px !important;
     }
+    
+}
+
+@media screen and (max-width: 812px) {
+    .press {
+        font-size: 45px;
+    }
 }
