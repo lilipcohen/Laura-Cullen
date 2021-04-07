@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Wrapper from './components/Wrapper';
-import Home from './components/Home';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import Press from './components/Press';
+import Home from './pages/Home';
+import About from './pages/About';
+import Gallery from './pages/Gallery';
+import Press from './pages/Press';
 import Subscribers from './components/Subscribers';
 import Nav from './components/Nav';
 import Footer from './components/Footer/Footer';
