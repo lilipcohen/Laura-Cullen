@@ -6,7 +6,7 @@ import imageBank from "../images.json";
 import creativespace from "../images/creativespace.png";
 import gaslight from "../images/gaslight.JPG";
 import red from "../images/red.JPG";
-import ImageGallery from "./ImageGallery";
+import ImageGallery from "../components/ImageGallery";
 import "../styles/Gallery.css";
 
 

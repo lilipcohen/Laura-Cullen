@@ -1,7 +1,8 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Container, Col, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import HamburgerNav from  "../components/HamburgerNav";
 import '../styles/Home.css';
 import artstudio from '../images/artstudio.png';
 import artspace from '../images/artspace.png';
@@ -11,7 +12,11 @@ import img2 from '../images/img2.png';
 import img3 from '../images/img3.png';
 
 const Home = () => {
+ 
   return (
+    <>
+   
+    
     <div>
       <Parallax bgImage={artstudio} strength={500}>
         <div style={{ height: 900 }}>
@@ -123,6 +128,7 @@ const Home = () => {
         </Row>
       </Container>
     </div>
+    </>
   );
 };
 

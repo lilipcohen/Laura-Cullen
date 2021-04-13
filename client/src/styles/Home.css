@@ -72,8 +72,25 @@ h3 {
         margin-bottom: 30px;
     }
 
+    .nav {
+        display: none !important;
+    }
+
+
 
 }
+ 
+@media screen and (min-width: 1024px) {
+    .hamburgermenu {
+        display: none !important;
+    }
+
+    .nav {
+        display: flex !important;
+    }
+}
+
+
 
 @media screen and (max-width: 812px) {
     .react-parallax {
@@ -119,6 +136,8 @@ h3 {
         flex-grow: 0;
         margin-bottom: 10px;
     }
+
+   
    
 }
 
